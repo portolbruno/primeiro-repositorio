@@ -22,5 +22,13 @@ jobs:
           variavel = "hello World Python"
           print(variavel)
         shell: python  # you can declare the runtime you want
+  Second-Job:
+    name: "Install NodeJS"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "NodeJS version check"
+        run: node --version
+    
+    
        
       
