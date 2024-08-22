@@ -1,9 +1,9 @@
-name: primeira-pipeline #nome da Pipeline
+name: "First-Pipeline" # Pipeline name
 #trigger event - When any push occur in the main branch, this pipeline will run
 on: 
   push:
     branches: ["main"]
-  workflow_dispatch: #força que a execução seja feita manual (Approval)
+  workflow_dispatch: # It enables to be ran in a manual, not only running from the trigger (If it is not here, Pipeline only will run via the set trigger)
 
 #Jobs to execute all steps
 jobs:
