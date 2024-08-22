@@ -29,9 +29,9 @@ jobs:
       - name: "NodeJS version check"
         run: node --version
       - name: "defining NodeJS version"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4  #This ACTION is added via marketplace, you can check the definition accessing it
         with:
-          node-version: "20.13.1"
+          node-version: "20.13.1" #Parameters for choose a version inside the action for nodeJS
       - name: "NodeJS version check"
         run: node --version  
     
