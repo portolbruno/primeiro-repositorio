@@ -17,4 +17,10 @@ jobs:
         run: |   #using | in the run command, it rnables you to run many commands in the same block
           echo "you created your first pipeline/workflow"
           echo "Congratssssssssssssssss!!!!"
+      - name: "Script Python"
+        run: |
+          variavel " "hello World Python"
+          print(variavel)
+        shell: python  # you can declare the runtime you want
+       
       
