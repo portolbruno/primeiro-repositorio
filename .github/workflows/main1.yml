@@ -1,0 +1,20 @@
+name: primeira-pipeline #nome da Pipeline
+#trigger event - When any push occur in the main branch, this pipeline will run
+on: 
+  push:
+    branches: ["main"]
+  workflow_dispatch: #força que a execução seja feita manual (Approval)
+
+#Jobs to execute all steps
+jobs:
+  primeiro-job: #separate Jobs
+    name: "primeiro Job" #name of job, can be any name or anything
+    runs-on: ubuntu-latest #Select the runner (where this pipeline will run)
+    steps: #Each task to execute my job
+      - name: "My first action" #name of action 1
+        run: echo "Hello World" # which command will run inside the runner
+      - name: "My second Action"
+        run: |   #using | in the run command, it rnables you to run many commands in the same block
+          echo "you created your first pipeline/workflow"
+          echo "Congrats!!!!"
+      
