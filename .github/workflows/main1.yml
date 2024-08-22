@@ -16,5 +16,5 @@ jobs:
       - name: "My second Action"
         run: |   #using | in the run command, it rnables you to run many commands in the same block
           echo "you created your first pipeline/workflow"
-          echo "Congrats!!!!"
+          echo "Congratssssssssssssssss!!!!"
       
