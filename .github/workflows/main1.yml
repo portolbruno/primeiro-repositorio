@@ -28,6 +28,12 @@ jobs:
     steps:
       - name: "NodeJS version check"
         run: node --version
+      - name: "defining NodeJS version"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.13.1"
+      - name: "NodeJS version check"
+        run: node --version  
     
     
        
