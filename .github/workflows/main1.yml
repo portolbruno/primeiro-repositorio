@@ -23,6 +23,7 @@ jobs:
           print(variavel)
         shell: python  # you can declare the runtime you want
   Second-Job:
+    needs: [First-job]
     name: "Install NodeJS"
     runs-on: ubuntu-latest
     steps:
