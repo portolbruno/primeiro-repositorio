@@ -8,8 +8,8 @@ on:
 #Jobs to execute all steps
 jobs:
   First-job: #separate Jobs
-    name: "First Job" #name of job, can be any name or anything
     runs-on: ubuntu-latest #Select the runner (where this pipeline will run)
+    name: "First Job" #name of job, can be any name or anything
     steps: #Each task to execute my job
       - name: "My first action" #name of action 1
         run: echo "Hello World" # which command will run inside the runner
