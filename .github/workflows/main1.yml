@@ -8,7 +8,7 @@ on:
 #Jobs to execute all steps
 jobs:
   First-job: #separate Jobs
-    name: "primeiro Job" #name of job, can be any name or anything
+    name: "First Job" #name of job, can be any name or anything
     runs-on: ubuntu-latest #Select the runner (where this pipeline will run)
     steps: #Each task to execute my job
       - name: "My first action" #name of action 1
@@ -19,7 +19,7 @@ jobs:
           echo "Congratssssssssssssssss!!!!"
       - name: "Script Python"
         run: |
-          variavel "hello World Python"
+          variavel = "hello World Python"
           print(variavel)
         shell: python  # you can declare the runtime you want
        
